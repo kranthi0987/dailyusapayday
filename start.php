@@ -1,3 +1,32 @@
+<?php
+error_reporting(0);
+session_start();
+include("config.php");
+$my_connection = mysql_connect($db_host, $db_user, $db_pass) or die("connection cont be made");
+mysql_select_db("dailyusapayday", $my_connection) or die("cant select db");
+//not in use
+
+if (isset($_POST['submit'])) {
+    $room_types = $_POST['room_types'];
+    $room_price = $_POST['room_price'];
+    $no_rooms = $_POST['no_rooms'];
+    $ac = $_POST['ac'];
+    $gyser = $_POST['gyser'];
+    $western = $_POST['western'];
+    $beds = $_POST['Beds'];
+    $location = $_POST['location'];
+    if (isset($_POST['submit'])) {
+        $query = "INSERT INTO rooms SET room_types ='$room_types',room_price = '$room_price',no_rooms = '$no_rooms',ac = '$ac',gyser = '$gyser', western = '$western',Beds='$beds',location='$location'";
+//           echo $query;
+        $result1 = mysql_query($query, $my_connection) or die(mysql_error());
+        $_SESSION['msg'] = "Your Data inserted Successfully";
+        header('location:talakonaroomupdate.php');
+    } else {
+
+
+    }
+}
+?>
 <html lang="en"><head>
     <title>Start - Best Usa Payday Loans Online. Simple and fast application.</title>
     <meta charset="utf-8">
@@ -253,8 +282,8 @@
 
                             }
 
-                });
-                });
+                        });
+                    });
                 });
             </script>
 

@@ -8,5 +8,6 @@
     <orderEntry type="library" name="jquery.maskedinput" level="application" />
     <orderEntry type="library" name="validation" level="application" />
     <orderEntry type="library" name="fingerprint" level="application" />
+    <orderEntry type="library" name="app" level="application" />
   </component>
 </module>

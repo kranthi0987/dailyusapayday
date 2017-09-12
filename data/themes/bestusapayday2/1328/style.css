@@ -1,0 +1,282 @@
+body{background:#ffffff;color:#808080;margin:0 auto;padding:0;font-size:12px;font-family:'Open Sans', sans-serif;-webkit-font-smoothing:antialiased;}
+form, fieldset{margin:0;padding:0;border-width:0;}
+input, select, textarea{font-family:'Open Sans', sans-serif;font-size:15px;color:black;resize:none;}
+input:focus, select:focus, textarea:focus, a{outline:none;}
+input[type=text], input[type=password], input[type=submit], input[type=button], input[type=email], input[type=number], input[type=tel], textarea{-webkit-appearance:none;}
+input[type=password]{font-family:'Open Sans', sans-serif;}
+table{border-spacing:0;}
+td, th{padding:0;}
+img{vertical-align:bottom;}
+a img{border-width:0;}
+a{color:inherit;text-decoration:none;transition:all 0.3s;}
+a:hover{text-decoration:underline;color:inherit;}
+a:hover, a:active, a:focus, .btn:focus, .btn:hover, .btn:active{text-decoration:none;outline:0;}
+.none{display:none;}
+*{margin-top:0;margin-bottom:0;-webkit-text-size-adjust:none;text-size-adjust:none;-moz-text-size-adjust:none;box-sizing:border-box;}
+*:focus{outline-width:0;}
+.all{overflow:hidden;min-width:320px;position:relative;transition:all 1s;left:0;}
+.all.active{left:-25%;}
+.container-fluid{max-width:1220px;margin:0 auto;}
+@media all and (min-width:544px){.container-fluid{padding-left:30px;padding-right:30px;}}
+@media all and (min-width:768px){.container-fluid{padding-left:40px;padding-right:40px;}}
+.has-error .form-control{box-shadow:none;}
+.has-error .form-control:focus, .has-error .form-control:active{box-shadow:none;}
+.has-success .form-control{box-shadow:none;border-bottom-color:#6ad074;}
+.has-success .form-control:focus, .has-success .form-control:active{box-shadow:none;}
+.form-group{position:relative;margin-bottom:20px;}
+.form-group .success{position:absolute;background:transparent url(/_lptemplates/bestusapayday2/images/tik.png) no-repeat center;right:15px;width:40px;top:5px;height:40px;}
+.form-group.has-error .form-control{box-shadow:inset 0 0 3px #e81515;}
+.select label{display:block;position:relative;}
+.select label:after{content:" ";border-top:6px solid #7f7f7f;border-left:3px solid transparent;border-right:3px solid transparent;position:absolute;top:50%;margin-top:-3px;right:20px;}
+.select select{border:1px solid #dfdfdf;border-radius:4px;background-color:white;width:100%;font-size:30px;font-weight:bold;height:50px;padding-left:25px;color:#ff6100;-webkit-appearance:none;-moz-appearance:none;}
+.select select::-ms-expand{display:none;}
+.select option{padding-left:25px;}
+.form-control{border-width:0;border-radius:4px;box-shadow:none;color:#313131;font-size:15px;padding:10px 30px 10px 30px;height:50px;border-width:0;background:white;transition:all 0.3s;width:100%;}
+.form-control::-moz-placeholder{color:#999999;}
+.form-control:-ms-input-placeholder{color:#999999;}
+.form-control::-webkit-input-placeholder{color:#999999;}
+.form-control:focus, .form-control:active{box-shadow:none;border-color:#1f2d3d;}
+.form-control.icon-zip{padding-left:60px;background:white url(/_lptemplates/bestusapayday2/images/zipcode.png) no-repeat 20px 50%;}
+.form-control.icon-email{padding-left:60px;background:white url(/_lptemplates/bestusapayday2/images/email.png) no-repeat 20px 50%;}
+.form-control.icon-lock{padding-left:60px;background:white url(/_lptemplates/bestusapayday2/images/lock.png) no-repeat 20px 50%;}
+.form-control.icon-phone{padding-left:60px;background:white url(/_lptemplates/bestusapayday2/images/phone.png) no-repeat 20px 50%;}
+.form-control.icon-person{padding-left:60px;background:white url(/_lptemplates/bestusapayday2/images/person.png) no-repeat 20px 50%;}
+textarea.form-control{height:157px;font-size:16px;font-weight:300;}
+@media all and (min-width:768px){textarea.form-control{height:100px;}}
+.btn{display:inline-block;font-size:17px;border-radius:4px;line-height:25px;font-family:teko, sans-serif;padding:5px 40px;transition:all 0.3s;text-decoration:none;color:white;font-weight:500;text-transform:uppercase;border-width:0;}
+.btn:hover, .btn:focus{color:white;background:#c59258;}
+.btn.btn-green{background-color:#5bcea3;*zoom:1;filter:progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF5BCEA3', endColorstr='#FF40BE8B');background-image:url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzViY2VhMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzQwYmU4YiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size:100%;background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5bcea3), color-stop(100%, #40be8b));background-image:-moz-linear-gradient(top, #5bcea3 0%, #40be8b 100%);background-image:-webkit-linear-gradient(top, #5bcea3 0%, #40be8b 100%);background-image:linear-gradient(to bottom, #5bcea3 0%, #40be8b 100%);box-shadow:0 20px 40px rgba(0, 0, 0, 0.2);}
+.btn.btn-green:hover{background:#5bcea3;}
+.btn.btn-big{font-size:23px;height:60px;min-width:245px;width:100%;}
+@media all and (min-width:768px){.btn.btn-big{width:auto;}}
+.main-bg{background:#1d4385 url(/_lptemplates/bestusapayday2/images/mainbg-mobile.jpg) no-repeat 60% 0;background-size:cover;position:relative;padding-bottom:11px;}
+@media all and (min-width:768px){.main-bg{background-image:url(/_lptemplates/bestusapayday2/images/mainbg.jpg);}}
+@media all and (min-width:1050px){.main-bg{background-position:50% 0;padding-bottom:0;}}
+.sub-bg{background:#1d4385 url(/_lptemplates/bestusapayday2/images/subbg1.jpg) no-repeat center top;background-size:cover;}
+@media all and (min-width:1050px){.sub-bg{background-size:auto;padding-bottom:0;}}
+.sub-bg.how-bg{background-image:url(/_lptemplates/bestusapayday2/images/subbg.jpg);}
+.sub-bg header .logo{padding-bottom:30px;}
+header{z-index:20;width:100%;position:relative;}
+header .container-fluid{position:relative;}
+header .top-bar{display:none;}
+@media all and (min-width:768px){header .top-bar{display:block;height:40px;background:rgba(0, 0, 0, 0.3);line-height:40px;overflow:hidden;}}
+header .top-bar .top-button{float:right;}
+header .top-bar .top-button a{font-weight:600;display:block;padding-left:30px;border-left:1px solid rgba(0, 0, 0, 0.2);}
+header .top-bar p{font-size:13px;color:white;}
+header .logo{padding-top:33px;float:left;padding-bottom:20px;}
+@media all and (min-width:768px){header .logo{padding-bottom:58px;}}
+header .ssl{position:absolute;right:40px;top:45px;}
+header nav{position:fixed;top:0;height:100%;overflow:auto;width:80%;background:white;z-index:10;right:-80%;transition:all 1s;box-shadow:0 0 0 1000px transparent;}
+@media all and (min-width:768px){header nav{width:40%;right:-40%;}}
+@media all and (min-width:1050px){header nav{padding-top:37px;background:transparent;position:static;overflow:visible;width:auto;float:right;height:60px;}}
+.active header nav{right:0;box-shadow:0 0 0 1000px rgba(0, 0, 0, 0.4);}
+header nav p{padding-top:20px;}
+@media all and (min-width:768px){header nav p{padding-top:0;float:right;padding-left:35px;vertical-align:middle;margin:0;}}
+header nav ul{clear:both;list-style-type:none;margin:0;padding:15px 0 0 0;}
+@media all and (min-width:1050px){header nav ul{text-align:center;padding:0;}}
+@media all and (min-width:1200px){header nav ul{display:inline-block;vertical-align:middle;text-align:right;padding-top:0;}}
+@media all and (min-width:1050px){header nav ul li{display:inline-block;padding-left:30px;}}
+header nav ul li:first-child{padding-left:0;}
+header nav ul li.active a{text-decoration:underline;}
+header nav ul li a{font-size:18px;line-height:30px;padding-left:30px;font-family:teko, sans-serif;display:block;color:#21689f;}
+@media all and (min-width:544px){header nav ul li a{font-size:24px;line-height:40px;}}
+@media all and (min-width:1050px){header nav ul li a{font-family:open sans, sans-serif;font-size:15px;line-height:35px;padding-left:0;color:white;}}
+header nav ul li a:hover, header nav ul li a:focus{color:#4bca98;}
+header nav ul li a.btn{margin-left:30px;margin-top:20px;}
+@media all and (min-width:1050px){header nav ul li a.btn{margin-left:0;margin-top:0;}}
+header #menu{font-size:16px;border-width:0;background:transparent;right:0;top:0;text-indent:-10000px;position:absolute;padding:0;cursor:pointer;width:96px;height:98px;background:transparent url(/_lptemplates/bestusapayday2/images/menu.png) no-repeat center;}
+@media all and (min-width:768px){header #menu{width:120px;height:120px;top:40px;}}
+@media all and (min-width:1050px){header #menu{display:none;}}
+.main-section h1{color:white;font-size:60px;line-height:50px;font-weight:500;position:relative;font-family:teko, sans-serif;margin-bottom:20px;}
+@media all and (min-width:768px){.main-section h1{margin-bottom:87px;font-size:90px;line-height:70px;}}
+@media all and (min-width:1050px){.main-section h1{margin-bottom:67px;}}
+.main-section h1 strong{font-weight:500;text-decoration:underline;}
+.main-section .slogan{font-size:35px;font-weight:500;color:#4bca98;font-family:teko, sans-serif;line-height:1;margin-bottom:26px;max-width:260px;}
+@media all and (min-width:768px){.main-section .slogan{margin-top:-67px;max-width:none;font-size:50px;}}
+@media all and (min-width:1050px){.main-section .slogan{margin-top:-47px;}}
+.form-box fieldset{position:relative;}
+@media all and (min-width:768px){.form-box fieldset{border:2px solid rgba(255, 255, 255, 0.2);border-radius:4px;}}
+.form-box .form-inner{max-width:615px;margin:0 auto;}
+.form-box h2{display:none;}
+@media all and (min-width:1050px){.form-box h2{display:block;position:absolute;font-family:'Caveat', cursive;font-size:30px;color:white;line-height:1;left:40px;top:20px;}}
+.form-box h2 strong{color:#4bca98;text-decoration:underline;font-weight:normal;}
+.form-box .slider-box{position:relative;margin:44px 0 21px 0;}
+@media all and (min-width:1050px){.form-box .slider-box{margin:47px 0 18px 0;}}
+.form-box .slider-box + .slider-box{padding-top:19px;}
+.form-box .slider-box input{position:absolute;top:0;left:-99999px;}
+.form-box .slider-box .slider{position:relative;padding-top:1px;}
+.form-box .slider-box .ui-slider{height:10px;background-color:rgba(0, 0, 0, 0.3);border-width:0;margin-top:13px;margin-left:0;margin-right:0;margin-bottom:35px;border-radius:0;margin-right:70px;margin-left:70px;}
+.form-box .slider-box .ui-slider:before{content:" ";height:10px;background-color:#f67723;position:absolute;left:-70px;top:0;width:70px;border-radius:2px 0 0 2px;}
+.form-box .slider-box .ui-slider:after{content:" ";height:10px;background-color:rgba(0, 0, 0, 0.3);position:absolute;right:-70px;top:0;width:70px;border-radius:0 2px 2px 0;}
+.form-box .slider-box .ui-slider-range{background-color:#f67723;border-radius:0;top:0;height:10px;}
+.form-box .slider-box .ui-slider-handle{background:#f67723 url(/_lptemplates/bestusapayday2/images/slider.png) no-repeat center;text-align:center;border-radius:4px;width:140px;font-size:30px;font-family:teko, sans-serif;font-weight:500;color:white;height:50px;top:-20px;margin-left:-70px;line-height:50px;box-shadow:0 10px 20px rgba(0, 0, 0, 0.1);}
+.form-box .labels{overflow:hidden;text-align:right;color:white;margin-top:-30px;font-size:12px;font-weight:bold;}
+.form-box .labels span:first-child{float:left;}
+.form-box .ui-widget-content{border:0;background-color:transparent;}
+.form-box .form-columns{padding-top:7px;}
+@media all and (min-width:768px){.form-box .form-columns{overflow:hidden;}}
+.form-box .form-columns:first-child{padding-top:37px;}
+@media all and (min-width:1050px){.form-box .form-columns:first-child{padding-bottom:10px;}}
+.form-box .form-columns .form-group{margin-bottom:10px;position:relative;}
+@media all and (min-width:768px){.form-box .form-columns .form-group{float:left;margin-bottom:20px;width:50%;padding-right:15px;}
+ .form-box .form-columns .form-group:first-child .success{right:30px;}
+ .form-box .form-columns .form-group + .form-group{padding-right:0;padding-left:15px;}}
+.form-box .form-columns .form-group label{display:none;}
+.form-box .button-box{padding-bottom:23px;position:relative;padding-top:10px;}
+@media all and (min-width:768px){.form-box .button-box{padding-bottom:28px;padding-top:15px;}}
+@media all and (min-width:1050px){.form-box .button-box{padding-top:5px;}}
+.form-box .button-box .button{text-align:center;}
+.form-box .button-box .ssl{display:block;text-align:center;padding-top:20px;}
+@media all and (min-width:768px){.form-box .button-box .ssl{padding-top:25px;position:absolute;right:0;top:0;}}
+.form-box .note{max-width:510px;margin:0 auto;font-size:13px;padding:0 0 27px 0;line-height:17px;color:#d2e5f9;text-align:center;}
+@media all and (min-width:768px){.form-box .note{padding:35px 0;}}
+.form-box .note a{text-decoration:underline;}
+.form-box .note a:hover{text-decoration:none;}
+.how-works{background-color:#e8f0f5;padding-top:32px;}
+@media all and (min-width:1050px){.how-works{padding-top:50px;}}
+.how-works h2{font-family:teko, sans-serif;font-weight:500;color:#333333;font-size:40px;padding-bottom:26px;}
+@media all and (min-width:544px){.how-works h2{font-size:50px;}}
+@media all and (min-width:1050px){.how-works h2{padding-bottom:0;}}
+.how-works h2 em{font-style:normal;font-family:'Caveat', cursive;font-size:30px;color:#f67723;display:none;}
+@media all and (min-width:544px){.how-works h2 em{display:inline;}}
+.how-works ul{list-style-type:none;margin:9px 0 0 0;padding:0;width:100%;counter-reset:step;}
+@media all and (min-width:544px){.how-works ul{display:table;}}
+@media all and (min-width:768px){.how-works ul{margin-top:0;}}
+.how-works ul li{vertical-align:bottom;color:#333333;font-size:27px;line-height:23px;font-family:teko, sans-serif;text-align:center;}
+@media all and (min-width:544px){.how-works ul li{display:table-cell;padding-right:40px;text-align:left;}}
+@media all and (min-width:768px){.how-works ul li{padding-right:0;font-size:30px;line-height:26px;}}
+.how-works ul li:last-child{padding-right:0;}
+.how-works ul li:before{content:counter(step);counter-increment:step;display:block;background-color:white;width:50px;height:50px;text-align:center;line-height:50px;border-radius:4px;position:relative;z-index:1;margin:0 auto 20px auto;}
+@media all and (min-width:768px){.how-works ul li:before{margin-left:0;float:left;}}
+.how-works ul li span{display:block;}
+@media all and (min-width:768px){.how-works ul li span{padding-left:70px;}}
+.how-works ul li .icon{display:block;line-height:90px;padding-left:0;position:relative;}
+@media all and (min-width:768px){.how-works ul li .icon{line-height:180px;}}
+@media all and (min-width:1050px){.how-works ul li .icon{line-height:200px;}}
+@media all and (min-width:768px){.how-works ul li .icon:before{content:" ";background-color:#d0d8dc;width:1px;left:25px;bottom:0;height:220px;position:absolute;}}
+.how-works ul li .icon img{vertical-align:bottom;position:relative;z-index:1;height:70px;width:auto;}
+@media all and (min-width:768px){.how-works ul li .icon img{height:auto;}}
+.info-section{background:white url(/_lptemplates/bestusapayday2/images/bg.jpg) no-repeat center bottom;padding-top:32px;border-bottom:1px solid #e5e5e5;background-size:auto 80%;}
+@media all and (min-width:1050px){.info-section{padding-top:92px;border-bottom-width:0;background-size:auto;}}
+.info-section .section-content{padding-bottom:50px;}
+@media all and (min-width:1050px){.info-section .section-content{padding-bottom:100px;border-bottom:1px solid #e5e5e5;}}
+.info-section h2{font-family:teko, sans-serif;font-weight:500;color:#333333;font-size:40px;padding-bottom:10px;}
+@media all and (min-width:544px){.info-section h2{font-size:50px;}}
+.info-section ul{list-style-type:none;margin:0;padding:15px 0 0 0;overflow:hidden;width:100%;}
+@media all and (min-width:544px){.info-section ul{display:table;}}
+@media all and (min-width:768px){.info-section ul{display:block;}}
+@media all and (min-width:1050px){.info-section ul{padding:35px 0 0 0;}}
+.info-section ul li{font-size:16px;line-height:20px;color:#666666;text-align:center;padding-bottom:20px;}
+@media all and (min-width:544px){.info-section ul li{display:table-cell;border-right:1px solid #e5e5e5;width:170px;padding-bottom:0;text-align:left;padding-right:40px;padding-left:40px;}}
+@media all and (min-width:768px){.info-section ul li{float:left;display:block;margin-right:40px;}}
+@media all and (min-width:1050px){.info-section ul li{width:196px;margin-right:75px;}}
+.info-section ul li:first-child{padding-left:0;}
+.info-section ul li:last-child{border-right-width:0;margin-right:0;padding-right:0;}
+.info-section ul li span{display:block;margin-bottom:15px;line-height:60px;}
+@media all and (min-width:544px){.info-section ul li span{margin-bottom:30px;}}
+.info-section ul li span img{vertical-align:middle;}
+.info-section .cite{color:#21689f;font-size:30px;margin-top:26px;margin-bottom:40px;line-height:1;font-family:'Caveat', cursive;max-width:500px;}
+@media all and (min-width:768px){.info-section .cite{font-size:35px;margin-top:38px;}}
+@media all and (min-width:1050px){.info-section .cite{max-width:none;margin-top:26px;margin-bottom:28px;}}
+@media all and (min-width:768px){.info-section .cite br{display:none;}}
+.help-section{padding-bottom:60px;padding-top:34px;}
+@media all and (min-width:768px){.help-section{padding-bottom:70px;}}
+@media all and (min-width:1050px){.help-section{padding-top:70px;}}
+.help-section h2{font-family:teko, sans-serif;font-weight:500;color:#333333;font-size:40px;}
+.help-section p{color:#808080;line-height:25px;font-size:15px;margin-bottom:25px;}
+.help-section ul{list-style-type:none;margin:18px 0 0 0;padding:0;border-bottom:1px solid #e5e5e5;}
+.help-section ul li{border-top:1px solid #e5e5e5;}
+.help-section ul h3{margin:0;}
+.help-section ul a{display:block;font-size:25px;font-family:teko, sans-serif;color:#333333;display:block;padding-top:17px;padding-bottom:17px;background:transparent url(/_lptemplates/bestusapayday2/images/plus.png) no-repeat right center;}
+.help-section ul p{display:none;padding:20px 0;}
+.help-section ul .active p{display:block;}
+.help-section .padding-left{padding-top:23px;}
+@media all and (min-width:1050px){.help-section .padding-left{padding-top:0;padding-left:40px;}}
+footer{font-size:15px;line-height:20px;border-top:1px solid #e5e5e5;padding-top:59px;}
+footer .bottom-logo{padding-bottom:25px;}
+footer ul{list-style-type:none;margin:0;padding:0;overflow:hidden;}
+footer ul li{padding-top:5px;padding-bottom:5px;color:#333333;}
+@media all and (min-width:544px){footer ul li{float:left;width:50%;}}
+@media all and (min-width:768px){footer ul li{width:25%;}}
+footer p{margin:0;padding:14px 0 5px 0;color:#808080;}
+@media all and (min-width:1050px){footer p{text-align:right;padding:5px 0;}}
+.footer-bottom-text{padding-top:22px;color:#808080;font-size:12px;line-height:20px;padding-bottom:23px;}
+@media all and (min-width:1050px){.footer-bottom-text{padding-top:45px;}}
+.footer-bottom-text p{margin-bottom:20px;}
+.page-title{padding-bottom:22px;}
+.page-title h1{font-size:40px;font-weight:500;color:white;font-family:teko, sans-serif;margin-top:0;}
+@media all and (min-width:544px){.page-title h1{font-size:60px;}}
+.content-section{padding-bottom:5px;padding-top:32px;}
+@media all and (min-width:768px){.content-section{padding-bottom:25px;padding-top:31px;}}
+@media all and (min-width:1200px){.content-section{padding-top:52px;}}
+.content-section h2{font-family:teko, sans-serif;color:#333333;font-size:30px;font-weight:500;margin-bottom:21px;margin-top:40px;}
+.content-section h3{color:#333333;font-size:24px;font-weight:500;font-family:teko, sans-serif;margin-bottom:21px;margin-top:40px;}
+.content-section p{margin-bottom:23px;}
+.content-section .text{line-height:25px;padding-bottom:24px;padding-top:1px;font-size:15px;}
+@media all and (min-width:1050px){.content-section .text{margin-right:33.33%;}}
+.content-section .text.full-text{margin-right:0;}
+.content-section .text .to-right{text-align:right;margin-top:-20px;}
+.full-width .content-section .text{max-width:750px;margin-left:auto;margin-right:auto;text-align:center;}
+.content-section ul{list-style-type:none;margin:0;padding:0;}
+.content-section ul li{padding-left:36px;padding-top:2px;padding-bottom:3px;background:transparent url(/_lptemplates/bestusapayday2/images/tik.png) no-repeat 8px 6px;}
+.inline-form{padding-bottom:70px;padding-top:6px;}
+.inline-form .form-group{border:1px solid #d9d9d9;border-radius:4px;}
+@media all and (min-width:768px){.inline-form .form-group{vertical-align:middle;display:inline-block;width:280px;margin-bottom:0;margin-right:10px;}}
+.inline-form .form-group label{display:none;}
+.inline-form .form-group .form-control{background-color:#f7f7f7;}
+@media all and (min-width:768px){.inline-form .button-box{display:inline-block;vertical-align:middle;width:280px;}}
+.inline-form .button-box p{margin-bottom:0;}
+.inline-form .button-box .btn{width:100%;height:50px;font-size:23px;text-transform:none;box-shadow:0 20px 40px rgba(0, 0, 0, 0.2);}
+.subpage-form{display:none;}
+@media all and (min-width:1050px){.subpage-form{display:block;}}
+.subpage-form .form-box-outer{position:relative;}
+.subpage-form .form-box{position:absolute;right:0;top:-99px;border-radius:4px;width:31%;background-color:#1d4384;border-radius:4px;padding-left:20px;padding-right:20px;padding-top:17px;}
+@media all and (min-width:1200px){.subpage-form .form-box{padding-left:30px;padding-right:30px;}}
+.subpage-form .form-box .h1{font-size:30px;color:white;font-family:caveat, cursive;}
+.subpage-form .form-box .slogan{line-height:20px;margin-top:4px;font-size:16px;color:#4bca98;margin-left:0;margin-right:0;}
+.subpage-form .form-box .note{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px;}
+@media all and (min-width:1200px){.subpage-form .form-box .note{margin-left:-40px;margin-right:-40px;padding-left:40px;padding-right:40px;}}
+.subpage-form .form-box .note br{display:none;}
+.subpage-form .form-box fieldset{border-width:0;}
+.subpage-form .form-box .slider-box{margin-top:27px;}
+.subpage-form .form-box .form-columns .form-group{float:none;width:100%;padding-right:0;padding-left:0;margin-bottom:10px;}
+.subpage-form .form-box .button-box .btn{float:none;width:100%;padding-left:20px;padding-right:20px;}
+.subpage-form .form-box .ssl{text-align:center;float:none;position:static;padding-top:20px;}
+.subpage-form .form-box .button-box{padding-bottom:17px;padding-top:0;}
+.subpage-form .form-box .note{padding-top:0;color:#879aba;}
+.form-steps{background-color:#e8f0f5;padding:35px 0;display:none;}
+@media all and (min-width:768px){.form-steps{display:block;}}
+.form-steps ul{list-style-type:none;margin:0;padding:0;font-size:30px;line-height:26px;color:#333333;font-weight:500;font-family:teko, sans-serif;overflow:hidden;}
+.form-steps ul li{float:left;width:33.33%;}
+.form-steps ul li .icon{float:left;width:84px;line-height:52px;}
+.form-steps ul li .icon img{vertical-align:middle;}
+.faq-page .text ul{margin:0;padding:25px 30px 50px 0;}
+.faq-page .text ul li{margin:0;padding:10px 0 10px 0;list-style-type:none;background:transparent url(/_lptemplates/bestusapayday2/images/open.png) no-repeat 0 13px;}
+.faq-page .text ul li:before{display:none;}
+.faq-page .text ul li.active{background-image:url(/_lptemplates/bestusapayday2/images/close.png);}
+.faq-page .text ul li.active h3 a{color:#4bca98;}
+.faq-page .text ul li.active h3 a:hover, .faq-page .text ul li.active h3 a:focus{color:#4bca98;}
+.faq-page .text ul li.active p{display:block;}
+.faq-page .text ul li h3{display:block;border:0;padding:0;margin:0;}
+.faq-page .text ul li h3 a{display:block;position:relative;z-index:1;padding-left:30px;color:black;}
+.faq-page .text ul li h3 a:hover, .faq-page .text ul li h3 a:focus{color:#000000;}
+.faq-page .text ul li h3 a:focus{text-decoration:none;}
+.faq-page .text ul li p{display:none;margin-bottom:40px;padding:12px 0 56px 30px;border-bottom:1px solid #e5e5e5;}
+.contact-form .form-table{border:1px solid #dfdfdf;border-radius:4px;}
+.contact-form .form-table .form-label{width:130px;}
+.contact-form .form-table .form-input{width:auto;}
+.contact-form .form-group .success{top:auto;bottom:5px;}
+.contact-form .form-group{border:1px solid #d9d9d9;border-radius:4px;}
+@media all and (min-width:768px){.contact-form .form-group{vertical-align:middle;width:380px;}}
+.contact-form .form-group label{display:none;}
+.contact-form .form-group .form-control{background-color:#f7f7f7;}
+#contact form .input-line .error-input, #contact form .textarea-line .error-input{box-shadow:0 0 3px #e81515 inset}
+#contact .input-line input, #contact .textarea-line textarea{background-color:#f7f7f7;padding-left:60px;border-radius:4px;border-width:0;box-shadow:none;color:#313131;font-size:15px;height:50px;transition:all 0.3s ease 0s;width:380px;margin-bottom:20px;display:block;line-height:1.42857;}
+#contact .textarea-line textarea{height:100px;padding: 10px 30px;}
+#contact label{display:none;}
+#contact input[type=submit]{font-size:23px;height:60px;min-width:245px;background-color:#5bcea3;background-image:linear-gradient(to bottom, #5bcea3 0%, #40be8b 100%);background-size:100% auto;box-shadow:0 20px 40px rgba(0, 0, 0, 0.2);border-radius:4px;border-width:0;color:white;display:inline-block;font-family:teko,sans-serif;font-weight:500;line-height:25px;padding:5px 40px;text-decoration:none;text-transform:uppercase;transition:all 0.3s ease 0s;cursor:pointer;text-align:center;touch-action:manipulation;vertical-align:middle;white-space:nowrap;}
+#contact input[type=submit]:hover{background:#5bcea3 none repeat scroll 0 0;}
+#contact #contactName{background:#f7f7f7 url("/_lptemplates/bestusapayday2/images/person.png") no-repeat scroll 16px 50%;padding-left:50px;}
+#contact #contactPhone{background:#f7f7f7 url("/_lptemplates/bestusapayday2/images/phone.png") no-repeat scroll 24px 14px;padding-left:50px;}
+#contact #contactEmail{background:#f7f7f7 url("/_lptemplates/bestusapayday2/images/email.png") no-repeat scroll 15px 50%;padding-left:50px;}
+@media all and (max-width:768px){#contact .input-line input, #contact .textarea-line textarea{width: 100%;}}

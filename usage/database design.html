@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<!-- saved from url=(0286)http://sheshachalam-vanadarshani.com:2082/cpsess9918290337/3rdparty/phpMyAdmin/db_datadict.php?db=sheshsiu_amex&token=29d23f252a80156feffaf08044fd07b0&goto=db_structure.php#PMAURL-0:db_datadict.php?db=sheshsiu_amex&table=resources&server=1&target=&token=29d23f252a80156feffaf08044fd07b0 -->
+
+<html lang="en" dir="ltr" style="display: block;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><style>html{display: none;}</style><link rel="icon" href="http://sheshachalam-vanadarshani.com:2082/cpsess9918290337/3rdparty/phpMyAdmin/favicon.ico" type="image/x-icon"><link rel="shortcut icon" href="http://sheshachalam-vanadarshani.com:2082/cpsess9918290337/3rdparty/phpMyAdmin/favicon.ico" type="image/x-icon"><link rel="stylesheet" type="text/css" href="./Print view - phpMyAdmin 4.0.5_files/print.css"><title>Print view - phpMyAdmin 4.0.5</title><script type="text/javascript" src="./Print view - phpMyAdmin 4.0.5_files/get_scripts.js.php"></script><script type="text/javascript" src="./Print view - phpMyAdmin 4.0.5_files/messages.php"></script><script type="text/javascript" src="./Print view - phpMyAdmin 4.0.5_files/get_image.js.php"></script><script type="text/javascript">// <![CDATA[
+
+PMA_commonParams.setAll({common_query:"server=0&token=29d23f252a80156feffaf08044fd07b0",opendb_url:"db_structure.php",safari_browser:"0",querywindow_height:"400",querywindow_width:"600",collation_connection:"utf8_general_ci",lang:"en",server:"0",table:"",db:"sheshsiu_amex",token:"29d23f252a80156feffaf08044fd07b0",text_dir:"ltr",pma_absolute_uri:"http://sheshachalam-vanadarshani.com:2082/cpsess9918290337/3rdparty/phpMyAdmin/",pma_text_default_tab:"Browse",pma_text_left_default_tab:"Structure",confirm:"1"});
+
+AJAX.scriptHandler.add("jquery/jquery-1.8.3.min.js",0).add("ajax.js",0).add("keyhandler.js",1).add("jquery/jquery-ui-1.9.2.custom.min.js",0).add("jquery/jquery.sprintf.js",0).add("jquery/jquery.cookie.js",0).add("jquery/jquery.mousewheel.js",0).add("jquery/jquery.event.drag-2.2.js",0).add("jquery/jquery-ui-timepicker-addon.js",0).add("jquery/jquery.ba-hashchange-1.3.js",0).add("jquery/jquery.debounce-1.0.5.js",0).add("jquery/jquery.menuResizer-1.0.js",0).add("cross_framing_protection.js",0).add("rte.js",1).add("messages.php?lang=en&amp;db=sheshsiu_amex&amp;server=0&amp;token=29d23f252a80156feffaf08044fd07b0",0).add("get_image.js.php?theme=pmahomme",0).add("functions.js",1).add("navigation.js",0).add("indexes.js",1).add("common.js",1).add("codemirror/lib/codemirror.js",0).add("codemirror/mode/mysql/mysql.js",0);
+
+$(function() {AJAX.fireOnload("keyhandler.js");AJAX.fireOnload("rte.js");AJAX.fireOnload("functions.js");AJAX.fireOnload("indexes.js");AJAX.fireOnload("common.js");});
+
+// ]]></script></head><body><noscript>&lt;div class="error"&gt;&lt;img src="themes/dot.gif" title="" alt="" class="icon ic_s_error" /&gt; Javascript must be enabled past this point&lt;/div&gt;</noscript><div id="page_content"><div>
+
+<h2>capacity</h2>
+
+Table comments: capacity<br><br>
+
+<table width="100%" class="print">
+
+<tbody><tr><th width="50">Column</th>
+
+    <th width="80">Type</th>
+
+    <th width="40">Null</th>
+
+    <th width="70">Default</th>
+
+        <th>Comments</th>
+
+</tr>
+
+    <tr class="odd">
+
+    <td class="nowrap">
+
+        cid    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">int(11)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        <tr class="even">
+
+    <td class="nowrap">
+
+        weekid    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">int(11)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        <tr class="odd">
+
+    <td class="nowrap">
+
+        rid    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">varchar(20)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        <tr class="even">
+
+    <td class="nowrap">
+
+        total    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">int(11)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        <tr class="odd">
+
+    <td class="nowrap">
+
+        fulltotal    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">int(11)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        </tbody></table>
+
+<h3>Indexes</h3><div class="no_indexes_defined hide"><div class="notice"><img src="./Print view - phpMyAdmin 4.0.5_files/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th></tr></thead><tbody><tr class="noclick odd"><td rowspan="1">PRIMARY</td><td rowspan="1">BTREE</td><td rowspan="1">Yes</td><td rowspan="1">No</td><td>cid</td><td>0</td><td>A</td><td>No</td></tr></tbody></table></div>
+
+    <div>
+
+<h2>projects</h2>
+
+Table comments: projects<br><br>
+
+<table width="100%" class="print">
+
+<tbody><tr><th width="50">Column</th>
+
+    <th width="80">Type</th>
+
+    <th width="40">Null</th>
+
+    <th width="70">Default</th>
+
+        <th>Comments</th>
+
+</tr>
+
+    <tr class="odd">
+
+    <td class="nowrap">
+
+        pid    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">int(10)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        <tr class="even">
+
+    <td class="nowrap">
+
+        name    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">varchar(100)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        <tr class="odd">
+
+    <td class="nowrap">
+
+        description    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">varchar(600)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        </tbody></table>
+
+<h3>Indexes</h3><div class="no_indexes_defined hide"><div class="notice"><img src="./Print view - phpMyAdmin 4.0.5_files/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th></tr></thead><tbody><tr class="noclick odd"><td rowspan="1">PRIMARY</td><td rowspan="1">BTREE</td><td rowspan="1">Yes</td><td rowspan="1">No</td><td>pid</td><td>0</td><td>A</td><td>No</td></tr></tbody></table></div>
+
+    <div>
+
+<h2>resources</h2>
+
+Table comments: resources<br><br>
+
+<table width="100%" class="print">
+
+<tbody><tr><th width="50">Column</th>
+
+    <th width="80">Type</th>
+
+    <th width="40">Null</th>
+
+    <th width="70">Default</th>
+
+        <th>Comments</th>
+
+</tr>
+
+    <tr class="odd">
+
+    <td class="nowrap">
+
+        rid    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">int(10)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        <tr class="even">
+
+    <td class="nowrap">
+
+        name    </td>
+
+    <td class="nowrap" lang="en" dir="ltr">varchar(25)</td>
+
+    <td>No</td>
+
+    <td class="nowrap"></td>
+
+            <td></td>
+
+</tr>
+
+        </tbody></table>
+
+<h3>Indexes</h3><div class="no_indexes_defined hide"><div class="notice"><img src="./Print view - phpMyAdmin 4.0.5_files/dot.gif" title="" alt="" class="icon ic_s_notice"> No index defined!</div></div><table id="table_index"><thead><tr><th>Keyname</th><th>Type</th><th>Unique</th><th>Packed</th><th>Column</th><th>Cardinality</th><th>Collation</th><th>Null</th></tr></thead><tbody><tr class="noclick odd"><td rowspan="1">PRIMARY</td><td rowspan="1">BTREE</td><td rowspan="1">Yes</td><td rowspan="1">No</td><td>rid</td><td>0</td><td>A</td><td>No</td></tr></tbody></table></div>
+
+    <p class="print_ignore"><input type="button" class="button" id="print" value="Print"></p></div><div id="selflink" class="print_ignore"><a href="http://sheshachalam-vanadarshani.com:2082/cpsess9918290337/3rdparty/phpMyAdmin/db_datadict.php?db=sheshsiu_amex&table=resources&server=1&target=&token=29d23f252a80156feffaf08044fd07b0" title="Open new phpMyAdmin window" target="_blank"><img src="./Print view - phpMyAdmin 4.0.5_files/dot.gif" title="Open new phpMyAdmin window" alt="Open new phpMyAdmin window" class="icon ic_window-new"></a></div><script type="text/javascript">// <![CDATA[
+
+AJAX.cache.primer = { url: "db_datadict.php?db=sheshsiu_amex&table=resources&server=1&target=&token=29d23f252a80156feffaf08044fd07b0", scripts: [{"name":"jquery\/jquery-1.8.3.min.js","fire":0},{"name":"ajax.js","fire":0},{"name":"keyhandler.js","fire":1},{"name":"jquery\/jquery-ui-1.9.2.custom.min.js","fire":0},{"name":"jquery\/jquery.sprintf.js","fire":0},{"name":"jquery\/jquery.cookie.js","fire":0},{"name":"jquery\/jquery.mousewheel.js","fire":0},{"name":"jquery\/jquery.event.drag-2.2.js","fire":0},{"name":"jquery\/jquery-ui-timepicker-addon.js","fire":0},{"name":"jquery\/jquery.ba-hashchange-1.3.js","fire":0},{"name":"jquery\/jquery.debounce-1.0.5.js","fire":0},{"name":"jquery\/jquery.menuResizer-1.0.js","fire":0},{"name":"cross_framing_protection.js","fire":0},{"name":"rte.js","fire":1},{"name":"functions.js","fire":1},{"name":"navigation.js","fire":0},{"name":"indexes.js","fire":1},{"name":"common.js","fire":1},{"name":"codemirror\/lib\/codemirror.js","fire":0},{"name":"codemirror\/mode\/mysql\/mysql.js","fire":0}], menuHash: "35f81067"};
+
+AJAX.scriptHandler;
+
+$(function() {});
+
+// ]]></script>  </body></html>

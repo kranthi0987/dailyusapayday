@@ -1,0 +1,27 @@
+[23-Sep-2013 17:59:33] PHP Warning:  move_uploaded_file(upload/index.php) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory in /home/sheshsiu/public_html/update2/usage/upload_file.php on line 16
+[23-Sep-2013 17:59:33] PHP Warning:  move_uploaded_file() [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move '/tmp/phpPZr6CG' to 'upload/index.php' in /home/sheshsiu/public_html/update2/usage/upload_file.php on line 16
+[23-Sep-2013 18:01:28] PHP Warning:  move_uploaded_file(upload/index.php) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: No such file or directory in /home/sheshsiu/public_html/update2/usage/upload_file.php on line 16
+[23-Sep-2013 18:01:28] PHP Warning:  move_uploaded_file() [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: Unable to move '/tmp/php8O8Nfj' to 'upload/index.php' in /home/sheshsiu/public_html/update2/usage/upload_file.php on line 16
+[26-Sep-2013 04:54:13] PHP Parse error:  syntax error, unexpected '{' in /home/sheshsiu/public_html/update2/usage/projectcreate.php on line 54
+[26-Sep-2013 06:07:43] PHP Parse error:  syntax error, unexpected '"', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/projectcreate.php on line 57
+[26-Sep-2013 06:08:17] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/projectcreate.php on line 57
+[26-Sep-2013 06:13:44] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/projectcreate.php on line 56
+[26-Sep-2013 06:14:10] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/projectcreate.php on line 56
+[26-Sep-2013 06:14:19] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/projectcreate.php on line 56
+[26-Sep-2013 09:32:03] PHP Parse error:  syntax error, unexpected '}' in /home/sheshsiu/public_html/update2/usage/projectcreate.php on line 115
+[26-Sep-2013 10:11:13] PHP Parse error:  syntax error, unexpected '"', expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacityindividual.php on line 14
+[26-Sep-2013 10:27:45] PHP Parse error:  syntax error, unexpected T_STRING in /home/sheshsiu/public_html/update2/usage/capacityindividual.php on line 48
+[27-Sep-2013 09:34:26] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/sheshsiu/public_html/update2/usage/talakona-revenue.php on line 30
+[27-Sep-2013 10:00:02] PHP Fatal error:  Cannot use [] for reading in /home/sheshsiu/public_html/update2/usage/talakona-revenue.php on line 86
+[27-Sep-2013 10:00:30] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in /home/sheshsiu/public_html/update2/usage/talakona-revenue.php on line 87
+[27-Sep-2013 10:02:53] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in /home/sheshsiu/public_html/update2/usage/talakona-revenue.php on line 95
+[30-Sep-2013 10:19:06] PHP Parse error:  syntax error, unexpected T_INC, expecting ')' in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 11
+[30-Sep-2013 10:19:34] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 14
+[30-Sep-2013 10:20:20] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 14
+[30-Sep-2013 10:20:43] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 14
+[30-Sep-2013 10:21:12] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 14
+[30-Sep-2013 10:22:00] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 14
+[30-Sep-2013 10:22:40] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 14
+[30-Sep-2013 10:23:56] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 14
+[30-Sep-2013 10:24:09] PHP Parse error:  syntax error, unexpected T_ENCAPSED_AND_WHITESPACE, expecting T_STRING or T_VARIABLE or T_NUM_STRING in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 14
+[30-Sep-2013 10:26:46] PHP Parse error:  syntax error, unexpected T_VARIABLE, expecting ',' or ';' in /home/sheshsiu/public_html/update2/usage/capacitysubmit.php on line 16

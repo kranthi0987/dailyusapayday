@@ -1,6 +1,7 @@
 <?php
 error_reporting(0);
 include("usage/config.php");
+include('usage/ipfile2.php');
 $my_connection = mysql_connect($db_host, $db_user, $db_pass) or die("connection cont be made");
 mysql_select_db("dailyusapayday", $my_connection) or die("cant select db");
 //not in use

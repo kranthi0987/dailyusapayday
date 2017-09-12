@@ -1218,7 +1218,7 @@ if (isset($_POST['submit'])) {
                     <div class="pdmSpacer"></div>
                 </div>
                 <div class="pdmCenter">
-                    <button href="" id="" name="submit">Send form</button>
+                    <button href="javascript:void(0)" id="pdmSend" name="submit">Send form</button>
                 </div>
             </form>
             <div class="pdmCenter">

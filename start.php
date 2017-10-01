@@ -1,86 +1,86 @@
 <?php
-error_reporting(1);
-include("usage/config.php");
-include('usage/ipfile2.php');
-$my_connection = mysql_connect($db_host, $db_user, $db_pass) or die("connection cont be made");
-mysql_select_db("dailyusapayday", $my_connection) or die("cant select db");
-//not in use
-
-if (isset($_POST['submit'])) {
-    $amount = $_POST['amount'];
-    $first = $_POST['first_name'];
-    $last = $_POST['last_name'];
-    $email = $_POST['email'];
-    $zip = $_POST['zip'];
-    $state = $_POST['state'];
-    $city = $_POST['city'];
-    $street = $_POST['street_address'];
-    $apart = $_POST['apartment'];
-    $lengthat = $_POST['length_at_address'];
-    $rentown = $_POST['rentorown'];
-    $gender = $_POST['gender'];
-    $driving = $_POST['driver_license'];
-    $issuing = $_POST['issuing_state'];
-    $primary1 = $_POST['primaryphone1'];
-    $primary2 = $_POST['primaryphone2'];
-    $primary3 = $_POST['primaryphone3'];
-    $workphone1 = $_POST['workphone1'];
-    $workphone2 = $_POST['workphone2'];
-    $workphone3 = $_POST['workphone3'];
-    $birthmonth = $_POST['birth_date_month`'];
-    $birthday = $_POST['birth_date_day'];
-    $birthyear = $_POST['birth_date_year'];
-    $ssn1 = $_POST['ssn1'];
-    $ssn2 = $_POST['ssn2'];
-    $ssn3 = $_POST['ssn3'];
-    $bestcontacttime = $_POST['best_contact_time'];
-    $bankaccountype = $_POST['bank_account_type'];
-    $bankname = $_POST['bank_name'];
-    $monthsatbank = $_POST['months_at_bank'];
-    $bankphone1 = $_POST['bank_phone1'];
-    $bankphone2 = $_POST['bank_phone2'];
-    $bankphone3 = $_POST['bank_phone3'];
-    $abarouting = $_POST['abarouting'];
-    $bankaccountnumber = $_POST['bank_account_number'];
-    $employmenttype = $_POST['employment_type'];
-    $empname = $_POST['employer_name'];
-    $empjobtitle = $_POST['employer_job_title'];
-    $empzip = $_POST['employer_zip'];
-    $empstate = $_POST['employer_state'];
-    $empcity = $_POST['employer_city'];
-    $empworkphone1 = $_POST['employer_workphone1'];
-    $empworkphone2 = $_POST['employer_workphone2'];
-    $empworkphone3 = $_POST['employer_workphone3'];
-    $monthhired = $_POST['month_hired'];
-    $yearhired = $_POST['year_hired'];
-    $employermonthlyincome = $_POST['employer_monthly_income'];
-    $payfrequency = $_POST['pay_frequency'];
-    $pd1m = $_POST['pay_date1_month'];
-    $pd1d = $_POST['pay_date1_day'];
-    $pd1y = $_POST['pay_date1_year'];
-    $pd2m = $_POST['pay_date2_month'];
-    $pd2d = $_POST['pay_date2_day'];
-    $pd2y = $_POST['pay_date2_year'];
-    $directdeposti = $_POST['direct_deposit'];
-    $usmilitary = $_POST['us_military_dependent'];
-
-    if (isset($_POST['submit'])) {
-        $query = "INSERT INTO `data` (`id`, `amount`, `First Name`, `Last Name`, `Email`, `zip`, `State`, `City`, `Street Address`, `Apartment`, `Months at Address`, `Home type`, `Gender`, `Drivers License Number`, `ID State`, `Primary Phone`, `Primary phone2`, `Primary phone3`, `Cell phone`, `Cell phone2`, `Cell phone3`, `birth_date_month`, `birth_date_day`, `birth_date_year`, `SSN`, `Ssn2`, `Ssn3`, `Best contact time`, `Type of Account`, `Bank Name`, `Months with Bank Account`, `Bank Phone`, `Bank phone2`, `Bank phone3`, `ABA/Routing Number`, `Account Number`, `Income Type`, `Employer`, `Job Title`, `Employer ZIP`, `Employer State`, `Employer City`, `Employer Phone`, `Employer phone2`, `Employer phone3`, `month_hired`, `year_hired`, `Monthly Income`, `How Often are you Paid`, `pay_date1_month`, `pay_date1_day`, `pay_date1_year`, `pay_date2_month`, `pay_date2_day`, `pay_date2_year`, `Do you have direct deposit?`, `Are you active military? (or dependent)`) VALUES (NULL, '$amount', '$first', '$last', '$mail', '$zip', '$state', '$city', '$street', '$apart', '$lengthat', '$rentown', '$gender', '$driving', '$issuing', '$primary1', '$primary2', '$primary3', '$workphone1', '$workphone2', '$workphone3', '$birthmonth', '$birthday', '$birthyear', '$ssn1', '$ssn2', '$ssn3', '$bestcontacttime', '$bankaccountype', '$bankname', '$monthsatbank', '$bankphone1', '$bankphone2', '$bankphone3', '$abarouting', '$bankaccountnumber', '$employmenttype', '$empname', '$empjobtitle', '$empzip', '$empstate', '$empcity', '$empworkphone1', '$empworkphone2', '$empworkphone3', '$monthhired', '$yearhired', '$employermonthlyincome', '$payfrequency', '$pd1m', '$pd1d', '$pd1y', '$pd2m', '$pd2d', '$pd2y', '$direct', '$usmilitary')";
-//           echo $query;
-        $result1 = mysql_query($query, $my_connection) or die(mysql_error());
-        $_SESSION['msg'] = "Your Data inserted Successfully";
-        echo "success";
-        header('location:talakonaroomupdate.php');
-    } else {
-        echo "failed";
-
-
-    }
-}
-?>
+//error_reporting(1);
+//include("usage/config.php");
+//include('usage/ipfile2.php');
+//$my_connection = mysql_connect($db_host, $db_user, $db_pass) or die("connection cont be made");
+//mysql_select_db("dailyusapayday", $my_connection) or die("cant select db");
+////not in use
+//
+//if (isset($_POST['submit'])) {
+//    $amount = $_POST['amount'];
+//    $first = $_POST['first_name'];
+//    $last = $_POST['last_name'];
+//    $email = $_POST['email'];
+//    $zip = $_POST['zip'];
+//    $state = $_POST['state'];
+//    $city = $_POST['city'];
+//    $street = $_POST['street_address'];
+//    $apart = $_POST['apartment'];
+//    $lengthat = $_POST['length_at_address'];
+//    $rentown = $_POST['rentorown'];
+//    $gender = $_POST['gender'];
+//    $driving = $_POST['driver_license'];
+//    $issuing = $_POST['issuing_state'];
+//    $primary1 = $_POST['primaryphone1'];
+//    $primary2 = $_POST['primaryphone2'];
+//    $primary3 = $_POST['primaryphone3'];
+//    $workphone1 = $_POST['workphone1'];
+//    $workphone2 = $_POST['workphone2'];
+//    $workphone3 = $_POST['workphone3'];
+//    $birthmonth = $_POST['birth_date_month`'];
+//    $birthday = $_POST['birth_date_day'];
+//    $birthyear = $_POST['birth_date_year'];
+//    $ssn1 = $_POST['ssn1'];
+//    $ssn2 = $_POST['ssn2'];
+//    $ssn3 = $_POST['ssn3'];
+//    $bestcontacttime = $_POST['best_contact_time'];
+//    $bankaccountype = $_POST['bank_account_type'];
+//    $bankname = $_POST['bank_name'];
+//    $monthsatbank = $_POST['months_at_bank'];
+//    $bankphone1 = $_POST['bank_phone1'];
+//    $bankphone2 = $_POST['bank_phone2'];
+//    $bankphone3 = $_POST['bank_phone3'];
+//    $abarouting = $_POST['abarouting'];
+//    $bankaccountnumber = $_POST['bank_account_number'];
+//    $employmenttype = $_POST['employment_type'];
+//    $empname = $_POST['employer_name'];
+//    $empjobtitle = $_POST['employer_job_title'];
+//    $empzip = $_POST['employer_zip'];
+//    $empstate = $_POST['employer_state'];
+//    $empcity = $_POST['employer_city'];
+//    $empworkphone1 = $_POST['employer_workphone1'];
+//    $empworkphone2 = $_POST['employer_workphone2'];
+//    $empworkphone3 = $_POST['employer_workphone3'];
+//    $monthhired = $_POST['month_hired'];
+//    $yearhired = $_POST['year_hired'];
+//    $employermonthlyincome = $_POST['employer_monthly_income'];
+//    $payfrequency = $_POST['pay_frequency'];
+//    $pd1m = $_POST['pay_date1_month'];
+//    $pd1d = $_POST['pay_date1_day'];
+//    $pd1y = $_POST['pay_date1_year'];
+//    $pd2m = $_POST['pay_date2_month'];
+//    $pd2d = $_POST['pay_date2_day'];
+//    $pd2y = $_POST['pay_date2_year'];
+//    $directdeposti = $_POST['direct_deposit'];
+//    $usmilitary = $_POST['us_military_dependent'];
+//
+//    if (isset($_POST['submit'])) {
+//        $query = "INSERT INTO `data` (`id`, `amount`, `First Name`, `Last Name`, `Email`, `zip`, `State`, `City`, `Street Address`, `Apartment`, `Months at Address`, `Home type`, `Gender`, `Drivers License Number`, `ID State`, `Primary Phone`, `Primary phone2`, `Primary phone3`, `Cell phone`, `Cell phone2`, `Cell phone3`, `birth_date_month`, `birth_date_day`, `birth_date_year`, `SSN`, `Ssn2`, `Ssn3`, `Best contact time`, `Type of Account`, `Bank Name`, `Months with Bank Account`, `Bank Phone`, `Bank phone2`, `Bank phone3`, `ABA/Routing Number`, `Account Number`, `Income Type`, `Employer`, `Job Title`, `Employer ZIP`, `Employer State`, `Employer City`, `Employer Phone`, `Employer phone2`, `Employer phone3`, `month_hired`, `year_hired`, `Monthly Income`, `How Often are you Paid`, `pay_date1_month`, `pay_date1_day`, `pay_date1_year`, `pay_date2_month`, `pay_date2_day`, `pay_date2_year`, `Do you have direct deposit?`, `Are you active military? (or dependent)`) VALUES (NULL, '$amount', '$first', '$last', '$mail', '$zip', '$state', '$city', '$street', '$apart', '$lengthat', '$rentown', '$gender', '$driving', '$issuing', '$primary1', '$primary2', '$primary3', '$workphone1', '$workphone2', '$workphone3', '$birthmonth', '$birthday', '$birthyear', '$ssn1', '$ssn2', '$ssn3', '$bestcontacttime', '$bankaccountype', '$bankname', '$monthsatbank', '$bankphone1', '$bankphone2', '$bankphone3', '$abarouting', '$bankaccountnumber', '$employmenttype', '$empname', '$empjobtitle', '$empzip', '$empstate', '$empcity', '$empworkphone1', '$empworkphone2', '$empworkphone3', '$monthhired', '$yearhired', '$employermonthlyincome', '$payfrequency', '$pd1m', '$pd1d', '$pd1y', '$pd2m', '$pd2d', '$pd2y', '$direct', '$usmilitary')";
+////           echo $query;
+//        $result1 = mysql_query($query, $my_connection) or die(mysql_error());
+//        $_SESSION['msg'] = "Your Data inserted Successfully";
+//        echo "success";
+//        header('location:talakonaroomupdate.php');
+//    } else {
+//        echo "failed";
+//
+//
+//    }
+//}
+//?>
 <html lang="en">
 <head>
-    <title>Start - Best Usa Payday Loans Online. Simple and fast application.</title>
+    <title>Start - Daily Usa Payday Loans Online. Simple and fast application.</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
@@ -139,7 +139,7 @@ if (isset($_POST['submit'])) {
             <!--            a: "1",-->
             <!--            sub: "",-->
             <!--            domain: "",-->
-            <!--            vref: encodeURIComponent("https%3A%2F%2Fwww.bestusapayday.com%2F"),-->
+            <!--            vref: encodeURIComponent("https%3A%2F%2Fwww.dailyusaPayday.com%2F"),-->
             <!--            vkey: "",-->
             <!--            vendor_p1: encodeURIComponent(""),-->
             <!--            flexible: "1",-->
@@ -1564,32 +1564,33 @@ if (isset($_POST['submit'])) {
                         <li><a href="how-it-works/how-it-works.html">How It Works</a></li>
                         <li><a href="faq/faq.html">FAQ</a></li>
                         <li><a href="terms/terms.html">Terms</a></li>
-                        <li><a href="https://www.bestusapayday.com/privacy-policy/privacy-policy.html">Privacy
+                        <li><a href="https://www.dailyusaPayday.com/privacy-policy/privacy-policy.html">Privacy
                                 policy</a></li>
-                        <li><a href="https://www.bestusapayday.com/start/start.html">Start</a></li>
+                        <li><a href="https://www.dailyusaPayday.com/start/start.html">Start</a></li>
                         <li><a href="http://opt-out-supress.com/">Opt out</a></li>
                     </ul>
                 </div>
                 <div class="col-md-3">
-                    <p>© 2017 bestusapayday.com</p>
+                    <p>© 2017 dailyusaPayday.com</p>
                 </div>
             </div>
         </div>
     </footer>
     <aside class="footer-bottom-text">
         <div class="container-fluid">
-            <p>Legal Disclaimer: This website does not constitute an offer or solicitation to lend. bestusapayday.com is
-                not a lender and does not make loans or credit decisions. bestusapayday.com provides a matching service
+            <p>Legal Disclaimer: This website does not constitute an offer or solicitation to lend. dailyusaPayday.com
+                is
+                not a lender and does not make loans or credit decisions. dailyusaPayday.com provides a matching service
                 only and is not acting as a representative, agent, or correspondent for any of the lenders we contract
-                with. bestusapayday.com does not charge a service fee. bestusapayday.com does not control and is not
-                responsible for the actions or inactions of any lender. bestusapayday.com does not endorse any
+                with. dailyusaPayday.com does not charge a service fee. dailyusaPayday.com does not control and is not
+                responsible for the actions or inactions of any lender. dailyusaPayday.com does not endorse any
                 particular lender or loan product. You are under no obligation to use the service, initiate contact, or
                 request credit with any of the lenders. This service is not available in all states. The residents of
                 Arkansas, New York, Vermont and West Virginia will not be able to use the service of the website.
                 Service availability and scope are subject to change without notice.<br>
-                Subject to our privacy policy, bestusapayday.com will transfer your information to lenders in our
+                Subject to our privacy policy, dailyusaPayday.com will transfer your information to lenders in our
                 program and other service providers and marketing companies with which we do business who may or may not
-                offer payday loans up to $1,000 and online personal loans up to $3,000. bestusapayday.com does not
+                offer payday loans up to $1,000 and online personal loans up to $3,000. dailyusaPayday.com does not
                 guarantee that completing an online form will result in your being matched with a lender, being offered
                 a loan product with satisfactory rates or terms, or a loan product of the requested sum or desirable
                 terms, or receiving any approval from a lender in the first place.</p>

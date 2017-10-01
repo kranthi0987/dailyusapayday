@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+error_reporting(1);
 include("usage/config.php");
 include('usage/ipfile2.php');
 $my_connection = mysql_connect($db_host, $db_user, $db_pass) or die("connection cont be made");
